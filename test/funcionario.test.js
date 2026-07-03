@@ -13,7 +13,7 @@ describe("API de Funcionarios", ()=>{
             cargo: "Analista"
         })
 
-        expect(resposta.statusCode.toBe(201));
+        expect(resposta.statusCode).toBe(201);
 
         expect(resposta.body.nome).toBe("Maria");
 
