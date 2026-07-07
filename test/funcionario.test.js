@@ -7,7 +7,7 @@ const app = require("../src/app");
 describe("API de Funcionarios", ()=>{
     it("Deve cadastrar um novo funcionario", async ()=>{
         const resposta = await request(app)
-        .post("/funcionarios")
+        .post("/funcionario")
         .send({
             nome: "Maria",
             cargo: "Analista"
@@ -24,7 +24,7 @@ describe("API de Funcionarios", ()=>{
 describe("API de Funcionarios", ()=>{
     it("Deve cadastrar um novo funcionario", async ()=>{
         const resposta = await request(app)
-        .post("/funcionarios")
+        .post("/funcionario")
         .send({
             nome: "Henderson",
             cargo: "Desenvolvedor"
@@ -41,7 +41,7 @@ describe("API de Funcionarios", ()=>{
 describe("API de Funcionarios", ()=>{
     it("Deve cadastrar um novo funcionario", async ()=>{
         const resposta = await request(app)
-        .post("/funcionarios")
+        .post("/funcionario")
         .send({
             nome: "Henderson Silva",
             cargo: "Desenvolvedor"
