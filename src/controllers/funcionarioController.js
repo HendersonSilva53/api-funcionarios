@@ -2,8 +2,16 @@ const Funcionario = require("../models/funcionario");
 
 exports.cadastrar = async (req, res) => {
 
-    const funcionario = await Funcionario.create(req.body);
-    res.status(201).json(funcionario);
+    try{
+        const funcionario = await Funcionario.create(req.body);
+        res.status(201).json(funcionario);
+    }catch(error){
+        console.error("ERRO:", error);
+        res.status(500).json({
+            message: error.message,
+            name: error.name
+        });
+    }
 }
 
 exports.listar = async (req,res) => {
