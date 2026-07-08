@@ -3,7 +3,7 @@ const request = require("supertest");
 const app = require("../src/app");
 
 const sequelize = require("../src/config/database");
-const Funcionario = require("../src/models/Funcionario");
+const Funcionario = require("../src/models/funcionario");
 
 beforeAll(async () => {
     await sequelize.authenticate();
