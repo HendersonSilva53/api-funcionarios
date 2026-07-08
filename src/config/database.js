@@ -1,4 +1,4 @@
-const {Sequelize} = require("sequelize");
+const { Sequelize } = require("sequelize");
 
 require("dotenv").config();
 
@@ -11,13 +11,6 @@ const sequelize = new Sequelize(
         dialect: "mysql",
         logging: false
     }
-)
-
-try{
-    sequelize.authenticate();
-    console.log("Conexão com o banco de dados estabelecida com sucesso!");              
-} catch (error) {
-    console.error(error);
-}
+);
 
 module.exports = sequelize;
