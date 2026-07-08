@@ -2,7 +2,17 @@ const request = require("supertest");
 
 const app = require("../src/app");
 
-//Escrita de um teste unitário
+const sequelize = require("../src/config/database");
+const Funcionario = require("../src/models/Funcionario");
+
+beforeAll(async () => {
+    await sequelize.authenticate();
+    await sequelize.sync({ force: true });
+});
+
+afterAll(async () => {
+    await sequelize.close();
+});
 
 describe("API de Funcionarios", ()=>{
     it("Deve cadastrar um novo funcionario", async ()=>{

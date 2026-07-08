@@ -7,8 +7,4 @@ const app = express();
 app.use(express.json());
 app.use(routes);
 
-//sincroniza tabelas automaticamente
-sequelize.sync()
-
-
 module.exports = app;
