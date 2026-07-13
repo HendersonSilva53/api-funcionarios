@@ -14,7 +14,8 @@ describe("API de Funcionarios", ()=>{
         .post("/funcionario")
         .send({
             nome: "Maria",
-            cargo: "Analista"
+            cargo: "Analista",
+            salario: 15000.00
         })
 
         expect(resposta.statusCode).toBe(201);
@@ -22,6 +23,8 @@ describe("API de Funcionarios", ()=>{
         expect(resposta.body.nome).toBe("Maria");
 
         expect(resposta.body.cargo).toBe("Analista");
+
+        expect(resposta.body.salario).toBe("15000.00");
     })
 })
 
@@ -31,7 +34,8 @@ describe("API de Funcionarios", ()=>{
         .post("/funcionario")
         .send({
             nome: "Henderson",
-            cargo: "Desenvolvedor"
+            cargo: "Desenvolvedor",
+            salario: 20000.00
         })
 
         expect(resposta.statusCode).toBe(201);
@@ -39,6 +43,8 @@ describe("API de Funcionarios", ()=>{
         expect(resposta.body.nome).toBe("Henderson");
 
         expect(resposta.body.cargo).toBe("Desenvolvedor");
+
+        expect(resposta.body.salario).toBe("20000.00");
     })
 })
 
@@ -48,7 +54,8 @@ describe("API de Funcionarios", ()=>{
         .post("/funcionario")
         .send({
             nome: "Henderson Silva",
-            cargo: "Desenvolvedor"
+            cargo: "Desenvolvedor",
+            salario: 10000.00
         })
 
         expect(resposta.statusCode).toBe(201);
@@ -56,5 +63,7 @@ describe("API de Funcionarios", ()=>{
         expect(resposta.body.nome).toBe("Henderson Silva");
 
         expect(resposta.body.cargo).toBe("Desenvolvedor");
+
+        expect(resposta.body.salario).toBe("10000.00");
     })
 })
