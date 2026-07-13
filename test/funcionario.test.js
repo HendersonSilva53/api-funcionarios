@@ -24,7 +24,7 @@ describe("API de Funcionarios", ()=>{
 
         expect(resposta.body.cargo).toBe("Analista");
 
-        expect(resposta.body.salario).toBe("15000.00");
+        expect(resposta.body.salario).toBe(15000.00);
     })
 })
 
@@ -44,7 +44,7 @@ describe("API de Funcionarios", ()=>{
 
         expect(resposta.body.cargo).toBe("Desenvolvedor");
 
-        expect(resposta.body.salario).toBe("20000.00");
+        expect(resposta.body.salario).toBe(20000.00);
     })
 })
 
@@ -64,6 +64,6 @@ describe("API de Funcionarios", ()=>{
 
         expect(resposta.body.cargo).toBe("Desenvolvedor");
 
-        expect(resposta.body.salario).toBe("10000.00");
+        expect(resposta.body.salario).toBe(10000.00);
     })
 })
