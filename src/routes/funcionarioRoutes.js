@@ -6,8 +6,8 @@ const controller = require("../controllers/funcionarioController");
 
 router.get("/funcionarios", controller.listar);
 router.get("/funcionarios/:id", controller.buscarPorId);
-router.post("/funcionario", controller.cadastrar);
-router.put("/funcionario/:id", controller.atualizar);
+router.post("/funcionarios", controller.cadastrar);
+router.put("/funcionarios/:id", controller.atualizar);
 router.delete("/funcionario/:id", controller.deletar);
 
 module.exports = router;

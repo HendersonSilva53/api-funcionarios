@@ -2,21 +2,21 @@
   "development": {
     "username": "root",
     "password": "123456",
-    "database": "empresa_dev",
+    "database": "empresa",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
     "password": "123456",
-    "database": "empresa_test",
+    "database": "empresa",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "production": {
     "username": "root",
     "password": "123456",
-    "database": "empresa_prod",
+    "database": "empresa",
     "host": "127.0.0.1",
     "dialect": "mysql"
   }
