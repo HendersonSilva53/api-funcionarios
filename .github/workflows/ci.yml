@@ -14,14 +14,14 @@ jobs:
           DB_HOST: 127.0.0.1
           DB_USER: root
           DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
-          DB_NAME: empresa_test
+          DB_NAME: empresa
 
     services:
       mysql:
         image: mysql:8
         env:
           MYSQL_ROOT_PASSWORD: ${{ secrets.DB_PASSWORD }}
-          MYSQL_DATABASE: empresa_test
+          MYSQL_DATABASE: empresa
         ports:
           - 3306:3306
         options: >-
