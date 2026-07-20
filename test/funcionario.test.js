@@ -11,7 +11,7 @@ afterAll(async () => {
 describe("API de Funcionarios", ()=>{
     it("Deve cadastrar um novo funcionario", async ()=>{
         const resposta = await request(app)
-        .post("/funcionario")
+        .post("/funcionarios")
         .send({
             nome: "Maria",
             cargo: "Analista",
@@ -31,7 +31,7 @@ describe("API de Funcionarios", ()=>{
 describe("API de Funcionarios", ()=>{
     it("Deve cadastrar um novo funcionario", async ()=>{
         const resposta = await request(app)
-        .post("/funcionario")
+        .post("/funcionarios")
         .send({
             nome: "Henderson",
             cargo: "Desenvolvedor",
@@ -51,7 +51,7 @@ describe("API de Funcionarios", ()=>{
 describe("API de Funcionarios", ()=>{
     it("Deve cadastrar um novo funcionario", async ()=>{
         const resposta = await request(app)
-        .post("/funcionario")
+        .post("/funcionarios")
         .send({
             nome: "Henderson Silva",
             cargo: "Desenvolvedor",
